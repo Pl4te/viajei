@@ -1,0 +1,160 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 200), rgb(17, 54,71));
+}
+
+
+
+.campo_Login{
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+}
+
+.title_Login{
+    text-align: center;
+    border: none;
+    font-size: 35px;
+
+}
+.inputUser{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.check_in{
+    background-color: dodgerblue;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.check_in:hover{
+    background-color: deepskyblue;
+}
+
+.p_login{
+    text-align: center;
+    border: none;
+    font-size: 15px;
+}
+
+.create_account{
+    background-color: dodgerblue;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login_Label{
+    color: white;
+    position: relative;
+    top: 15x;
+    font-size: 15px;
+    pointer-events: none;
+    top: -55px;
+    left: 5px;
+    
+}
+
+.create_account:hover{
+    background-color: deepskyblue;
+}
+
+.box{
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    border-radius: 15px;
+    width: 20%;
+    color: white;
+}
+.come_back{
+
+    background-color: dodgerblue;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+fieldset{
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.title_Register{
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    width: 94%;
+}
+.inputBirth_date{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.labelInput{
+    color: white;
+    position: absolute;
+    top: -20px;
+    left: 8px;
+    pointer-events: none;
+    transition: .5px;
+}
+
+.register{
+    background-color: dodgerblue;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.register:hover{
+    background-color: deepskyblue;
+}
+
+.exit{
+    background-color: dodgerblue;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+
+

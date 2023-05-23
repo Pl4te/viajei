@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+	<style>
+		#mensagemErro {
+		  display: none;
+		  background-color: red;
+		  color: white;
+		  padding: 10px;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  z-index: 9999;
+		}
+	  </style>
+	  
+	  <div id="mensagemErro">Por favor, preencha todos os campos obrigatórios!</div>
+	  
+	<style>
+      input:required:invalid {
+      border: 2px solid red;
+    }
+
+	</style>
+<head>
+	<title>Formulário de Registro</title>
+	<script>
+		function validarFormulario() {
+			var password = document.getElementById("password").value;
+			var confirm_password = document.getElementById("confirm_password").value;
+			if (password != confirm_password) {
+				alert("As senhas não coincidem. Por favor, tente novamente.");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Formulário de Registro</h1>
+	<form method="post" action="teste2.html" onsubmit="return validarFormulario();">
+		<label for="password">Senha:</label>
+		<input type="password" id="password" name="password" ><br>
+
+		<label for="confirm_password">Confirmar Senha:</label>
+		<input type="password" id="confirm_password" name="confirm_password" ><br>
+
+		<input type="submit" value="Registrar">
+	</form>
+
+    <script>
+		function mascaraTelefone(telephone) {
+			telephone.value = telephone.value.replace(/\D/g, '');
+			telephone.value = telephone.value.replace(/^(\d{2})(\d)/g, '($1) $2');
+			telephone.value = telephone.value.replace(/(\d)(\d{4})$/, '$1-$2');
+		}
+	</script>
+    <h1>Exemplo de Máscara de Telefone</h1>
+	<label for="telephone">Telefone:</label>
+	<input type="text" id="telephone" name="telephone" onkeyup="mascaraTelefone(this);" maxlength="15" required>
+
+    <input type="submit" value="Registrar">
+	<script>
+    alert("Esta é uma mensagem de alerta!");
+	</script>
+	<br>
+	<br>
+
+	<button onclick="confirmaAcao()">Executar Ação</button>
+	<input type="submit" name="register" value="Registrar" onclick="confirmaAcao()">
+
+	<script>
+    	function confirmaAcao() {
+        	if (alert("Tem certeza de que deseja executar esta ação?")) {
+            	// código para executar a ação aqui
+        	}
+    	}
+	</script>
+	<br>
+	<br>
+
+	<label for="meuInput">Digite algo:</label>
+	<input type="text" id="meuInput">
+
+	<button onclick="exibirAlerta()">Clique aqui para exibir um alerta com o valor digitado</button>
+
+	<script>
+    function exibirAlerta() {
+        // Obter o valor do input
+        var valorInput = document.getElementById("meuInput").value;
+        
+        // Exibir o alerta com o valor do input
+        alert("Você digitou: " + valorInput);
+    }
+	</script>
+
+	<script>
+			function cadastroSucesso() {
+				var register = document.getElementById("register").value;
+					alert("As senhas não coincidem. Por favor, tente novamente.");
+			}
+			
+	</script>
+	</head>
+	<body>
+		<h1>Formulário de Registro</h1>
+		<form method="post" action="" onsubmit="return cadastroSucesso()">
+			<label for="password">Senha:</label>
+			<input type="password" id="password" name="password"><br>
+
+			<label for="confirm_password">Confirmar Senha:</label>
+			<input type="password" id="confirm_password" name="confirm_password"><br>
+
+			<input type="submit" class="register" value="Registrar">
+			
+		</form>
+	</body>
+	<script>
+		function validarFormulario() {
+  		var nome = document.forms["meuFormulario"]["nome"].value;
+  		var email = document.forms["meuFormulario"]["email"].value;
+
+  		if (nome == "" || email == "") {
+   		alert("Por favor, preencha todos os campos obrigatórios!");
+    	return false;
+  			}
+		}
+	</script>
+	<form name="meuFormulario" onsubmit="return validarFormulario()">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" >
+	  
+		<label for="email">E-mail:</label>
+		<input type="email" id="email" name="email" >
+	  
+		<button type="submit">Enviar</button>
+	</form>
+
+	<script>
+		function validarFormulario() {
+  		var nome = document.forms["meuFormulario"]["nome"].value;
+  		var email = document.forms["meuFormulario"]["email"].value;
+  		var mensagemErro = document.getElementById("mensagemErro");
+
+  		if (nome == "" || email == "") {
+   		mensagemErro.style.display = "block";
+    	return false;
+  		}
+  		else {
+    	mensagemErro.style.display = "none";
+    	return true;
+  		}
+		}
+	</script>
+
+
+</body>
+
+</html>
